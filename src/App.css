@@ -1,3 +1,7 @@
+:root {
+    --margin-top-bottom: 2rem;
+}
+
 .app {
     display: flex;
     flex-direction: column;
@@ -6,4 +10,21 @@
     min-height: 100vh;
     background-color: #333;
     color: #ddd;
+}
+
+.header {
+    margin-top: var(--margin-top-bottom);
+}
+
+.footer {
+    margin-bottom: var(--margin-top-bottom);
+}
+
+.header,
+.content,
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
